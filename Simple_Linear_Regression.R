@@ -13,3 +13,7 @@ lm(formula = ROLL ~ INC, data = df)
 summary(m1)
 # add line of intercept and slop
 abline(m1, col="red", lty=2, lwd=3)
+# make a prediction using our model
+predict(m1, data.frame("INC" = 4000))
+# loot at confidence interval with defualt of 95% confidence
+predict(m1, data.frame("INC" = 4000), interval = "prediction")
