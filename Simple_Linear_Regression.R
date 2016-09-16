@@ -11,3 +11,5 @@ cor(df$ROLL, df$INC)
 lm(formula = ROLL ~ INC, data = df)
 # Get a more comprehensive summary of m1 by using the summary function
 summary(m1)
+# add line of intercept and slop
+abline(m1, col="red", lty=2, lwd=3)
